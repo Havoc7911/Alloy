@@ -16,7 +16,7 @@ const nodeTypes: NodeType[] = [
     label: 'Document',
     type: 'document',
     icon: '📝',
-    category: 'Content',
+    category: 'Collect',
     description: 'Create and edit documents'
   },
   {
@@ -24,7 +24,7 @@ const nodeTypes: NodeType[] = [
     label: 'File',
     type: 'file',
     icon: '📁',
-    category: 'Content',
+    category: 'Collect',
     description: 'Handle file operations'
   },
   {
