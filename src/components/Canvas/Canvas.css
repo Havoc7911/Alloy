@@ -1,0 +1,98 @@
+.canvas-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #1a1a1a;
+}
+
+.canvas-header {
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.canvas-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* React Flow customization */
+.react-flow__node {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.react-flow__node:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.react-flow__node.selected {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #3b82f6;
+  stroke-width: 2;
+}
+
+.react-flow__controls {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.react-flow__controls-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.react-flow__minimap {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.react-flow__minimap-mask {
+  fill: rgba(59, 130, 246, 0.2);
+  stroke: #3b82f6;
+}
+
+/* Dark theme specific styles */
+.react-flow__pane {
+  cursor: grab;
+}
+
+.react-flow__pane:active {
+  cursor: grabbing;
+}
+
+/* Node styles */
+.react-flow__node-default,
+.react-flow__node-input,
+.react-flow__node-output {
+  background: #2d2d2d;
+  border: 1px solid #444;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background: #3b82f6;
+  border: 2px solid #1a1a1a;
+}
+
+.react-flow__handle:hover {
+  background: #60a5fa;
+}
