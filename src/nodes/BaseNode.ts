@@ -12,8 +12,7 @@ export abstract class BaseNode {
   public type: string
   public name: string
   public description?: string
-  public category: 'source' | 'transform' | 'sink' | 'process' | 'storage' | 'automation'
-  public inputPorts: InputPorts = {}
+  public category: 'Collect' | 'Edit' | 'Send' | 'Route' | 'Save' | 'Automate'  public inputPorts: InputPorts = {}
   public outputPorts: OutputPorts = {}
   public configSchema: ConfigField[] = []
   public config: Record<string, any> = {}
