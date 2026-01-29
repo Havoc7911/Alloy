@@ -32,7 +32,7 @@ const nodeTypes: NodeType[] = [
     label: 'User',
     type: 'user',
     icon: '👤',
-    category: 'People',
+    category: 'Send',
     description: 'Manage users and permissions'
   },
   {
@@ -40,7 +40,7 @@ const nodeTypes: NodeType[] = [
     label: 'API',
     type: 'api',
     icon: '🔌',
-    category: 'Integration',
+    category: 'Send',
     description: 'Connect to external services'
   },
   {
@@ -56,7 +56,7 @@ const nodeTypes: NodeType[] = [
     label: 'Modifier',
     type: 'modifier',
     icon: '🔧',
-    category: 'Transform',
+    category: 'Edit',
     description: 'Transform and modify data'
   },
   {
@@ -64,7 +64,7 @@ const nodeTypes: NodeType[] = [
     label: 'Process',
     type: 'process',
     icon: '⚡',
-    category: 'Execution',
+    category: 'Route',
     description: 'Execute processes'
   },
   {
@@ -72,7 +72,7 @@ const nodeTypes: NodeType[] = [
     label: 'Device',
     type: 'device',
     icon: '📱',
-    category: 'Hardware',
+    category: 'Send',
     description: 'Connect to devices'
   },
 ];
