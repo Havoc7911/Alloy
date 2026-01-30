@@ -11,9 +11,13 @@ export { NodeHandlerRegistry, nodeHandlerRegistry } from './NodeHandlerRegistry'
 // Collect category handlers
 export { FileInputHandler } from './collect/FileInputHandler';
 
+// Transform category handlers
+export { FilterHandler } from './transform/FilterHandler';
+
 // Initialize all handlers
 import { nodeHandlerRegistry } from './NodeHandlerRegistry';
 import { FileInputHandler } from './collect/FileInputHandler';
+import { FilterHandler } from './transform/FilterHandler';
 
 /**
  * Register all node handlers on module load
@@ -21,6 +25,9 @@ import { FileInputHandler } from './collect/FileInputHandler';
 export function initializeHandlers(): void {
   // Collect category
   nodeHandlerRegistry.register(new FileInputHandler());
+    
+  // Transform category
+  nodeHandlerRegistry.register(new FilterHandler());
   
   // Add more handlers as they are implemented
   // nodeHandlerRegistry.register(new ApiInputHandler());
