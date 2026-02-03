@@ -18,7 +18,9 @@
     "reactflow": "^11.10.1",    "zustand": "^4.4.0",
     "typescript": "^5.1.6",
     "zod": "^3.22.4",
-    "crypto-js": "^4.1.1"
+    "crypto-js": "^4.1.1",
+    "mobx": "^6.10.2",
+    "mobx-react-lite": "^4.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
